@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.brandonsicay.controller.ProgramaController">
+   <children>
+      <TextField fx:id="txtNombre" layoutX="57.0" layoutY="288.0" onKeyTyped="#soloLetras" prefHeight="31.0" prefWidth="210.0" />
+      <Label layoutX="161.0" layoutY="38.0" text="INGRESO DE DATOS PREVIOS">
+         <font>
+            <Font name="Arial" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="354.0" text="Nombre del Programa">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="354.0" text="Cantidad de memoria (MB)">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="354.0" text="Tiempo en uso (Min)">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCantidad" layoutX="308.0" layoutY="288.0" onKeyTyped="#soloNumeros" />
+      <TextField fx:id="txtTiempo" layoutX="538.0" layoutY="288.0" onKeyTyped="#soloNumeros" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="297.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ram.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnGuardar" layoutX="238.0" layoutY="548.0" mnemonicParsing="false" onMouseClicked="#nuevo" text="Guardar">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="187.0" layoutY="424.0" text="Memoria">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="424.0" text="Tamaño (GB)">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbTamanio" layoutX="422.0" layoutY="470.0" prefHeight="31.0" prefWidth="252.0" />
+      <ComboBox fx:id="cmbMemoria" layoutX="101.0" layoutY="470.0" prefHeight="31.0" prefWidth="252.0" />
+      <Button fx:id="btnIniciar" layoutX="422.0" layoutY="548.0" mnemonicParsing="false" onMouseClicked="#principal" prefHeight="51.0" prefWidth="96.0" text="Iniciar">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

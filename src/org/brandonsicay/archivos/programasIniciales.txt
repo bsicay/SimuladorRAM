@@ -1,0 +1,2 @@
+Chrome,2070,20,En espera,32
+Firefox,2070,25,En espera,32

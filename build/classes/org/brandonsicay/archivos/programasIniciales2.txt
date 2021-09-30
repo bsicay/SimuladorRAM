@@ -1,0 +1,6 @@
+Chrome,350,60,Espera,54
+Firefox,3500,60,Espera,54
+Ubuntu,3500,60,Espera,54
+Linux,3500,60,Espera,54
+Fornite,3800,60,Espera,54
+a,32,4,Espera,1

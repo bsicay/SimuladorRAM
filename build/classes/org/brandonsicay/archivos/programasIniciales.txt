@@ -1,0 +1,2 @@
+Chrome,2070,60,En espera,32
+j,3500,20,En cola,54
